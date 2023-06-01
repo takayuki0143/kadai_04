@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyColors</title>
+    <style>
+        body {
+          padding: 0;
+          margin: 0;
+        }
+        canvas {
+          display: block;
+        }
+        .button-container {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+        }
+        .button {
+          padding: 10px 20px;
+          margin-top: 600px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+        <div class="button-container">
+        <button class="button change" onclick="setup();">Change</button>
+        <button class="button stop" onclick="stopDrawing()">Stop</button>
+        <button class="button restart" onclick="restartDrawing()">ReStart</button>
+        <button class="button save" onclick="saveDrawing()">Save</button>
+        <button class="button clear" onclick="clearDrawing()">Clear</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
