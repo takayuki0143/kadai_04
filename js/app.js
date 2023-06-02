@@ -4,7 +4,7 @@ var stopDrawingFlag = false;
 
 function setup(){
     // 最初に1回だけ実行される処理
-    createCanvas(1000, 600);
+    createCanvas(1500, 1000);
 
     noStroke();
     background(random(0,255),random(0,255),random(0,255));
